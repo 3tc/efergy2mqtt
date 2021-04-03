@@ -1,0 +1,14 @@
+
+# Editors, IDEs etc.
+.idea/
+*.sw?
+*.bak
+*.old
+
+# environment containing secrets
+.env
+
+*.csv
+nohup.out
+*.log
+
