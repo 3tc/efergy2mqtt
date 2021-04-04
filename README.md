@@ -1,7 +1,7 @@
 
 # Efergy2MQTT
 When we purchased our new home (in Australia), I discovered a curious white device (photo below) in the meter box.  After doing a google image search, I discovered it was an Efergy energy meter, which sounds pretty handy even though the wireless display was nowhere to be found.
-![Efergy E2](https://imgur.com/a/HVmc2C8)
+![Efergy E2](https://github.com/3tc/efergy2mqtt/images/efergy-transmitter.png)
 
 Given this was 433Mhz device, I replaced the batteries and started exploring the 433Mhz band with my RTL-SDR dongle, surprisingly I found it's signal, as well as other useful devices owned by my neighbours :)
 
@@ -40,6 +40,6 @@ pipenv install
 ```
 
 ### Grafana
-![Grafana dashboard](https://imgur.com/a/Jt8xlyt)
+![Grafana dashboard](https://github.com/3tc/efergy2mqtt/images/energy-consumption.png)
 I already had HomeAssistant pushing temperature readings from the home into InfluxDB to chart temperature readings in Grafana.  Adding the energy consumption data to influx was a simple config change in HomeAsssitant, and once the data was being populated in Infux, setting up a dashboard was trivial.
 
