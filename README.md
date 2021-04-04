@@ -29,6 +29,13 @@ Optional
 git clone https://github.com/3tc/efergy2mqtt.git
 cd efergy2mqtt
 
+# Populate required environment envs into .env
+#  pipenv will load .env into the virtual environment 
+echo 'EFERGY_BINARY=/path/to/EfergyRPI_log' >> .env
+echo 'MQTT_HOST=mqtt.host' >> .env
+echo 'MQTT_USER=myMqttUsername' >> .env
+echo 'MQTT_PASS=myMqttPassword' >> .env
+
 # Install pipenv
 python3 -m pip --user pipenv
 
